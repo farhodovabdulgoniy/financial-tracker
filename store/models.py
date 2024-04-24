@@ -16,29 +16,35 @@ class Store(models.Model):
     
     total_debt_uzs = models.DecimalField(null=True,
                                          blank=True,
+                                         default=0,
                                          max_digits=12,
                                          decimal_places=2)
     total_debt_usd = models.DecimalField(null=True,
                                          blank=True,
+                                         default=0,
                                          max_digits=12,
                                          decimal_places=2)
     
     paid_debt_uzs = models.DecimalField(null=True,
                                         blank=True,
+                                        default=0,
                                         max_digits=12,
                                         decimal_places=2)
     paid_debt_usd = models.DecimalField(null=True,
                                         blank=True,
+                                        default=0,
                                         max_digits=12,
                                         decimal_places=2)
     
     unpaid_debt_uzs = models.DecimalField(null=True,
                                         blank=True,
-                                        max_digits=12,
+
+default=0,                                        max_digits=12,
                                         decimal_places=2)
     unpaid_debt_usd = models.DecimalField(null=True,
                                         blank=True,
-                                        max_digits=12,
+
+default=0,                                        max_digits=12,
                                         decimal_places=2)
 
     user = models.ForeignKey(User,
