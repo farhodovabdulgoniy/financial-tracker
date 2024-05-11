@@ -52,7 +52,7 @@ default=0,                                        max_digits=12,
                              blank=True,
                              related_name='stores',
                              on_delete=models.SET_NULL)
-    
+    type = models.CharField(max_length=50)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
