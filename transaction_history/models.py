@@ -8,12 +8,12 @@ class TransactionHistory(models.Model):
 
     amount_uzs = models.DecimalField(null=True,
                                      blank=True,
-                                     max_digits=9,
+                                     max_digits=12,
                                      decimal_places=2)
 
     amount_usd = models.DecimalField(null=True,
                                      blank=True,
-                                     max_digits=9,
+                                     max_digits=12,
                                      decimal_places=2)
     
     info = models.TextField(null=True,
